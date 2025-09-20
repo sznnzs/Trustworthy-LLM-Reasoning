@@ -1,0 +1,2 @@
+# Trustworthy-LLM-Reasoning
+The code of "Reasoning under Uncertainty: Efficient LLM Inference via Unsupervised Confidence Dilution and Convergent Adaptive Sampling"
