@@ -1,0 +1,33 @@
+{
+  "distributed": false,
+  "use_wandb": false,
+  "wandb_project": "reasoning-under-uncertainty",
+
+  "total_train_samples": 100000,
+  "total_eval_samples": 5000,
+  "batch_size": 2,
+  "gradient_accumulation_steps": 64,
+  "num_epochs": 1,
+  "learning_rate": 5e-5,
+
+  "model_name": "meta-llama/Llama-3.1-8B-Instruct",
+
+  "lora_r": 32,
+  "lora_alpha": 16,
+  "lora_dropout": 0.05,
+
+  "causal_lm_ratio": 0.8,
+  "use_zero": false,
+
+  "dataset": "data/gsm8k/llama",
+  "threshold": 0.75,
+  "datasets": [
+    {
+      "name": "gsm8k",
+      "train_percentage": 1.0,
+      "eval_percentage": 1.0
+    }
+  ],
+
+  "output_dir": "outputs/loras/llama"
+}
